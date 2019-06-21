@@ -1,3 +1,168 @@
-#contato {
+ /*Tipografia da sessão - roboto
+ cor das letras - branco*/
+ #contato {
 	background-color: #4F00AA;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+ /*Campo do título e dos dados*/
+#dados{
+	/*fundo com gradiente linear de um tom de roxo para o transparente*/
+	background-image: linear-gradient(rgba(212,0,238,0.7), rgba(212,0,238,0.2)); 
+	/* largura de 75% e altura de 25% do body*/
+	width: 72%;
+	height: 25%;
+	/* bordas arredondadas*/
+	border-radius: 10px;
+	/*posição relativa à posição inicial*/
+	position: relative;
+	/*Deslocamento para a direita e para baixo da posição default*/
+	left: 18.75%;
+	top: 25%;
+	/*tipografia roboto ou outra sem serifa*/
+	font-family: 'Roboto', sans-serif;
+}
+/*Texto "CONTATO" da div #dados*/
+#dados #dados-texto #texto1{
+	/*sem margin no topo*/
+	margin-top: 0px;
+	/*margin de 15px na parte inferior*/
+	margin-bottom: 15px;
+	/*fonte de 1.6 em relação à fonte raiz*/
+	font-size: 1.6rem;
+}
+/*Texto de localização*/
+#dados #dados-texto #texto2{
+	/*sem margin nem border*/
+	margin: 0px;
+	border: 0px;
+	/*fonte de 1.2 em relãção à fonte raiz*/
+	font-size: 1.2rem;
+}
+/*Texto de contatos*/
+#dados #dados-texto #texto3{
+	/*30 pixels de distância entre as duas partes do texto(email e telefone)*/
+	word-spacing: 30px;
+	/*sem magrin inferior */
+	margin-bottom: 0px;
+	/*margin superior de 5 pixels*/
+	margin-top: 5px;
+}
+#dados-texto{
+	/*centralização dos textos na div maior*/
+	position: absolute;
+	left: 30px;
+	top: 34px;
+}
+/*Div do formulário*/
+#formulario{
+	/*tipogrfia roboto ou sem serifa*/
+	font-family: 'Roboto', sans-serif;
+	/*alinhamento da div formulario com a div dos dados*/
+	position: relative;
+	left: 18.75%;
+	top: 28%;
+	width: 72%;
+	/*tamanho dos textos de título de 17 px*/
+	font-size: 17px;
+}
+/*Campos de texto do formulário (exceto o campo de mensagem)*/
+#formulario input[type=text]{
+	/*posicionamento e tamanho dos campos*/
+	width: 93%;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	padding: 8px 10px;
+	border: 0px;
+	/*bordas arredondadas*/
+	border-radius: 5px;
+	/*cor do texto escrito nos campos sendo preto*/
+	color: black;
+	/*cor do campo sendo branco*/
+	background: white;
+	/*opacidade dos campos de 20%*/
+	opacity: 0.2;
+}
+/*Botão de enviar do formulário*/
+#formulario input[type=submit]{
+	/*posicionamento e tamanho do botão*/
+	position: absolute;
+	z-index: 1;
+	width: 12%;
+	height: 25%;
+	top: 127.5%;
+	left:83.1%;
+	border: 0px;
+	/*tipografia roboto ou sem serifa*/
+	font-family: 'Roboto', sans-serif;
+	/*bordas arredondadas*/
+	border-radius: 5px;
+	/*tamanho do texto do botão*/
+	font-size: 1.2rem;
+	/*cor do botão*/
+	background: linear-gradient(rgba(212,0,238,0.7), rgba(212,0,238,0.2));
+	/*cor do texto do botão*/
+	color: white;
+}
+/*Campo de texto para mensagem*/
+#resposta{
+	/*tamanho da fonte*/
+	font-size: 13px;
+	/*cor do texto do campo*/
+	color: black;
+	/*posição e tamanho do campo*/
+	padding: 8px 10px;
+	position: absolute;
+	left: 0%;
+	top: 100%;
+	width: 78.3%;
+	height: 40%;
+	margin-top: 5px;
+	/*cor do campo*/
+	background-color: #FFFFFF; 
+	/*bordas arredondadas*/
+	border-radius: 5px;
+	/*opacidade de 20%*/
+	opacity: 0.2;
+}
+/*Mudanças quando o mouse sobrepor o botão*/
+#formulario .botao:hover {
+	/*mudança de cor*/
+	background: linear-gradient(rgba(212,0,220,0.8), rgba(212,0,220,0.8));
+}
+/*mudança quando o botão é pressionado*/
+#formulario .botao:active {
+	/*mudança de cor*/
+	background: linear-gradient(rgba(212,0,220,0.5), rgba(212,0,220,0.5));
+}
+/*Div da imagem da montanha*/
+#montanha_contatos{
+	/*posição e tamanho da div*/
+	position: absolute;
+	top: 62.4%;
+	left: 88.62%;
+	width: 11.38%;
+	height: 37.6%;
+}
+/*Imagem da montanha*/
+#montanha_contatos img{
+	/*posição e tamanho da imagem*/
+	width:100%; 
+	height:100%;
+}
+/*Div da imagem das árvores*/
+#arvores_contatos{
+	/*posição e tamanho da div*/
+	position: absolute;
+	top: 70.0%;
+	left: 91.5%;
+	width: 6.46%;
+	height: 28.63%;
+}
+/*Imagem das árvores*/
+#arvores_contatos img{
+	/*posição e tamanho da imagem*/
+	width: 100%;
+	height: 100%;
+	display: block;
 }
