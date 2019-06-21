@@ -2,14 +2,14 @@ html,body{
   margin:0;
   height:100%;
 }
-
+/*fonte do corpo é roboto, e o gradiente é esse aí do roxo pro roxo mais rosa*/
 body{
 
   font-family: 'Roboto', sans-serif;
   background-image:linear-gradient(#00003F,#00003F,#120058,#4F00AA);
   background-attachment: fixed;
 }
-
+/*criando as sessoes do site*/
 section {
   position: relative;
   top: 0;
@@ -17,7 +17,7 @@ section {
   width: auto;
   height: 100vh;
 }
-
+/*titulo fixo*/
 .titulo{
   position:fixed;
   z-index: 1;
@@ -31,10 +31,9 @@ section {
   */z-index: 2;
 
 }
+/*especificacoes de local e tamanho do menu, que é uma flex box*/
 .menu {
   position: fixed; 
-  
-
   transform: translate(0%,79%); 
   display: flex;
   flex-direction: column;
@@ -47,7 +46,7 @@ section {
   padding-left: 3.125%;
 }
 
-
+/*especificacao dos items do menu*/
 .menu a {
   color: #ffffff;
   word-wrap: break-word;
@@ -59,10 +58,11 @@ section {
   padding-bottom: 25%;
   display: block;
 }
-
+/*sí esse tem borda no fim, para ficar uniforme*/
 #menu-ultimo-item{
   border-bottom: 1px solid white;
 }
+/*esse é o menu indicador rosinha:*/
 #menu-indicador{
   
   position: fixed;
@@ -73,8 +73,9 @@ section {
   top:32.2%;
   left:1.7%;
   z-index: 5;
-}
 
+  transition: .5s ease-in;
+}
 .i{
 	width: 500px;
 	height: 800px; 

@@ -39,9 +39,10 @@
 
 
 		<!-- SESSÃO INICIO -->
-		<section id="inicio">
+		<section id="inicio" onmouseenter="mover(1)" onkeydown="mover(1)" onkeyup="mover(1)">
 			<div id=cenario>
-				<img id="inicio-montanha" src="img/montanha01.png">
+				<img id="inicio-montanha" src="img/montanha01.png" onmouseover="animarArvores('arvores-inicio-montanha')">
+				<img id="arvores-inicio-montanha" src="img/montanha-arvores-inicio.png" ">
 			</div>
 			<div id="inicio-titulo">
 				<div id="inicio-titulo-texto">SOLUÇÕES DIGITAIS<br><span id="inicio-sub-titulo">Plantando ideias, colhendo resultados.</span></div>				
@@ -51,7 +52,7 @@
 
 
 		<!-- SESSÃO PRODUTOS -->
-				<section id="produtos">
+				<section id="produtos" onmouseenter="mover(2)" onkeydown="mover(2)" onkeyup="mover(2)">
 						<div class="produtos-header">
 				<div class="produtos-titulo">
 					<h2>PRODUTOS</h2>
@@ -98,7 +99,7 @@
 
 
 		<!-- SESSÃO SOBRE -->
-		<section id="sobre">
+		<section id="sobre" onmouseenter="mover(3)" onkeydown="mover(3)" onkeyup="mover(3)" >
 			<div id="sobre-titulo">
 				<div id="sobre-titulo-texto">QUEM SOMOS </div>
 			</div>
@@ -149,7 +150,7 @@
 
 
 		<!-- SESSÃO CONTATO -->
-		<section id="contato">
+		<section id="contato"onmouseenter="mover(4)" onkeydown="mover(4)" onkeyup="mover(4)">
 			
 			<!-- Título da sessão e dados da equipe -->
 			<div id="dados">
@@ -199,12 +200,13 @@
 	</main>
 
 	<!-- JAVASCRIPT -->
+
+	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/inicio.js"></script>
 	<script src="js/produtos.js"></script>
 	<script src="js/sobre.js"></script>
 	<script src="js/contato.js"></script>
-	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 </body>

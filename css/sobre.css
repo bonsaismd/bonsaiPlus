@@ -13,9 +13,9 @@
 	justify-content: space-between;
 	width:  55%;
 	height:45%;
-	
-	
 }
+
+
 
 /*mudanca na imagem de cada pessoa, para que fique com um filtro roxo bonitinho quando dá hover.*/
 /*é bem em cima da div e do tamanho dela, tem uma transição pra ficar mais dinamico quando passar o mouse e mudar*/
@@ -82,6 +82,7 @@
 	font-size: 33px;
 
 }
+/*para a imagem nao ultrapassar a div*/
 .imagens-item img{
 	max-width: 100%;
 	max-height: 100%;
