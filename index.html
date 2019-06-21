@@ -14,30 +14,44 @@
 	<link rel="stylesheet" type="text/css" href="css/contato.css" >
 	<link rel="stylesheet" type="tex/css" href="css/bootstrap.min.css">
 
-
+	<!-- Fonte -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 	<main>
+		
+		<div class="titulo">
+			<div id="titulo-nome">BONSAI +</div>
+		</div>
+
+		<div id="menu-indicador">
+		
+		</div>
 
 		<div class="menu">
 
-			<a href="#inicio">Página Inicial</a>
-			<a href="#produtos">Produtos</a>
-			<a href="#sobre">Quem somos</a>
-			<a href="#contato">Contato</a>
+			<a href="#inicio" class="menu-item" onclick="mover(1)">Início</a>
+			<a href="#produtos" class="menu-item" onclick="mover(2)">Produtos</a>
+			<a href="#sobre" class="menu-item" onclick="mover(3)">Equipe</a>
+			<a href="#contato" id="menu-ultimo-item" class="menu-item" onclick="mover(4)">Contato</a>
 
 		</div>
 
 
 		<!-- SESSÃO INICIO -->
 		<section id="inicio">
-
+			<div id=cenario>
+				<img id="inicio-montanha" src="img/montanha01.png">
+			</div>
+			<div id="inicio-titulo">
+				<div id="inicio-titulo-texto">SOLUÇÕES DIGITAIS<br><span id="inicio-sub-titulo">Plantando ideias, colhendo resultados.</span></div>				
+			</div>
 		</section>
 
 
 
 		<!-- SESSÃO PRODUTOS -->
-		<section id="produtos">
+				<section id="produtos">
 						<div class="produtos-header">
 				<div class="produtos-titulo">
 					<h2>PRODUTOS</h2>
@@ -85,8 +99,52 @@
 
 		<!-- SESSÃO SOBRE -->
 		<section id="sobre">
-			
+			<div id="sobre-titulo">
+				<div id="sobre-titulo-texto">QUEM SOMOS </div>
+			</div>
+			<div id="sobre-imagens">
+				<a href="https://instagram.com/soueuaanac" target="_blank" class="imagens-item" >
+					<img src="img/anac.jpg">
+					<div class="mudanca-img">
+						<div class="sobre-nome">Ana Cláudia	<br><span class="sub-nome">PROGRAMADORA</span></div>
+					</div>
+				</a>
+				<a href="https://www.behance.net/flexadesign" target="_blank" class="imagens-item" >
+					<img src="img/flexa.jpg">
+					<div class="mudanca-img">
+						<div class="sobre-nome">Ulysses Flexa<br><span class="sub-nome">ATENDIMENTO</span></div>
+					</div>
+				</a>
+				<a href="https://www.behance.net/vinicixsmarc" target="_blank" class="imagens-item" >
+					<img src="img/vinicius.jpg">
+					<div class="mudanca-img">
+						<div class="sobre-nome">Marcos Vinícius<br><span class="sub-nome">DESIGNER</span></div>
+					</div>
+				</a>
+				
+				<a href="https://www.behance.net/matbreu" target="_blank" class="imagens-item" id="img-abreu" >
+					<img src="img/abreu.jpg">
+					<div class="mudanca-img">
+						<div class="sobre-nome">Matheus Abreu<br><span class="sub-nome">DESIGNER</span></div>
+					</div>
+				</a>
+				
+				<a href="https://instagram.com/eugor_gomes" target="_blank" class="imagens-item" >
+					<img src="img/igor.jpg">
+					<div class="mudanca-img">
+						<div class="sobre-nome">Igor Gomes<br><span class="sub-nome">DESIGNER</span></div>
+					</div>
+				</a>
+				<div class="imagens-item" id="img-dek" >
+					<img src="img/dek.jpg">
+					<div class="mudanca-img">
+						<div class="sobre-nome">Carlos Matheus <br><span class="sub-nome">PROGRAMADOR</span></div>
+					</div>
+				</div>
+
+			</div>
 		</section>
+
 
 
 
@@ -136,7 +194,6 @@
 			
 			
 		</section>
-
 
 
 	</main>

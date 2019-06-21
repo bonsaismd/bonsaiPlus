@@ -1,0 +1,96 @@
+#sobre {
+	
+}
+
+/*a flex-box com as imagens das pessoas:*/
+#sobre-imagens{
+	position: absolute;
+	top:35.75%;
+	left: 26.5%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width:  55%;
+	height:45%;
+	
+	
+}
+
+/*mudanca na imagem de cada pessoa, para que fique com um filtro roxo bonitinho quando dá hover.*/
+/*é bem em cima da div e do tamanho dela, tem uma transição pra ficar mais dinamico quando passar o mouse e mudar*/
+/*comeca com opacidade 0, dai quando passa o mouse a opacidade aumenta, e é feito de um gradiente de roxo*/
+.mudanca-img {
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	transition: .1s ease-in-out;
+	opacity: 0;
+	background-image: linear-gradient(rgba(212,0,238,0.15),rgba(212,0,238,0.45));
+	border-radius: 14px;
+
+}
+
+/*cada imagem que está no flex-box. as imagens dos rostos das pessoas, ao dar hover elas aumentam para 130%*/
+.imagens-item:hover img{
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/*o mudanca-img de cada imagem aumenta também quando há hover na imagem.*/
+.imagens-item:hover .mudanca-img {
+	opacity: 1;
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+
+}
+/*titulo da sessão de sobre, que é arredondado, com um gradiente de rosa, e com as especificações de tamanho certas do grid*/
+#sobre-titulo{
+	border-radius: 10px;
+	background-image:linear-gradient(rgba(212,0,238,1),rgba(212,0,238,0.2));
+	z-index: 1;
+	position: absolute;
+	width:72%;
+	height: 9.5%;
+	left:18.75%;
+	top:20.75%;
+}
+/*o nome de cada pessoa: o padding é para não ficar colado na caixa, cor branca de texto, transform para ficar no canto certo*/
+/*tamanho da fonte 15 pois é bom, e o line-height foi para deixar o espaçamento menor entre o nome da pessoa e a função*/
+.sobre-nome{
+	padding:8%;
+	color:white;
+	transform: translate(0%,140%);
+	font-size:15px;
+	line-height: 0.9;
+}
+/*subtexto, exemplo: ana cláudia, PROGRAMADORA. Esse sub-texto tem tamanho menor que o nome da pessoa;*/
+.sub-nome{
+	font-size:10px;
+}
+#sobre-titulo-texto{
+	position: relative;
+	padding-left: 4.3%;
+	padding-top:1.5%;
+	padding-bottom: 1.5%;
+	color:white;
+
+	font-size: 33px;
+
+}
+.imagens-item img{
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 14px;
+}
+
+.imagens-item{
+	position: relative;
+	margin:2%;
+	height:41%;
+	width:23.52%;
+}

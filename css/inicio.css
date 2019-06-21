@@ -1,0 +1,32 @@
+#inicio-titulo {
+	border-radius: 10px;
+	background-image:linear-gradient(rgba(212,0,238,1),rgba(212,0,238,0.2));
+	z-index: 1;
+	position: absolute;
+	width:72%;
+	height: 40.5%;
+	left:18.75%;
+	top:24.75%;
+	text-align: center;
+}
+#inicio-titulo-texto{
+	font-size: 63px;
+		color:white;
+		padding-top:9.5%;
+
+	line-height: 50px;
+}
+#inicio-sub-titulo{
+	font-size:24px;
+}
+#inicio-montanha{
+	transform: translate(0%,140%);
+	position: relative;
+	bottom:0;
+	left:0;
+
+	max-width: 100%;
+	max-height: 100%;
+}
+
+

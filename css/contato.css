@@ -17,7 +17,7 @@
 	position: relative;
 	/*Deslocamento para a direita e para baixo da posição default*/
 	left: 18.75%;
-	top: 25%;
+	top: 23%;
 	/*tipografia roboto ou outra sem serifa*/
 	font-family: 'Roboto', sans-serif;
 }
@@ -60,7 +60,7 @@
 	/*alinhamento da div formulario com a div dos dados*/
 	position: relative;
 	left: 18.75%;
-	top: 28%;
+	top: 26%;
 	width: 72%;
 	/*tamanho dos textos de título de 17 px*/
 	font-size: 17px;
@@ -76,11 +76,11 @@
 	/*bordas arredondadas*/
 	border-radius: 5px;
 	/*cor do texto escrito nos campos sendo preto*/
-	color: black;
-	/*cor do campo sendo branco*/
-	background: white;
-	/*opacidade dos campos de 20%*/
-	opacity: 0.2;
+	color: white;
+	/*cor do campo sendo branco com opacidade 0.2*/
+	background: rgba(255,255,255,0.2);
+	/*opacidade dos campos de 100% por conta do texto*/
+	opacity: 1;
 }
 /*Botão de enviar do formulário*/
 #formulario input[type=submit]{
@@ -108,7 +108,7 @@
 	/*tamanho da fonte*/
 	font-size: 13px;
 	/*cor do texto do campo*/
-	color: black;
+	color: white;
 	/*posição e tamanho do campo*/
 	padding: 8px 10px;
 	position: absolute;
@@ -117,12 +117,12 @@
 	width: 78.3%;
 	height: 40%;
 	margin-top: 5px;
-	/*cor do campo*/
-	background-color: #FFFFFF; 
+	/*cor do campo branco com 20% de opacidade*/
+	background-color: rgba(255,255,255,0.2); 
 	/*bordas arredondadas*/
 	border-radius: 5px;
-	/*opacidade de 20%*/
-	opacity: 0.2;
+	/*opacidade de 100% para fonte legível*/
+	opacity: 1;
 }
 /*Mudanças quando o mouse sobrepor o botão*/
 #formulario .botao:hover {

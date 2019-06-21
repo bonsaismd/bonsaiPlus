@@ -4,9 +4,10 @@ html,body{
 }
 
 body{
-  background-image: linear-gradient(#00003F 70%, #4F00AA);
-  background-attachment: fixed;
+
   font-family: 'Roboto', sans-serif;
+  background-image:linear-gradient(#00003F,#00003F,#120058,#4F00AA);
+  background-attachment: fixed;
 }
 
 section {
@@ -17,22 +18,61 @@ section {
   height: 100vh;
 }
 
+.titulo{
+  position:fixed;
+  z-index: 1;
+  font-size:35px;
+  color:white; 
+  top:0;
+  width:100%;
+  height:20%;
+
+  /*background-image: linear-gradient(rgba(00,00,63,1),rgba(00,00,63,1),rgba(00,00,63,1),rgba(00,00,63,0));
+  */z-index: 2;
+
+}
 .menu {
   position: fixed; 
-  height: 100%; 
-  width: 10%; 
+  
+
+  transform: translate(0%,79%); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 8.2%;
+  height: 40%; 
   z-index: 1;
   top: 0; 
-  left: 0;
-  padding-bottom: 10px; 
+  left: 0; 
+  padding-left: 3.125%;
 }
 
+
 .menu a {
-	padding-left:40px; 
   color: #ffffff;
+  word-wrap: break-word;
   font-size: 1rem;
   text-decoration: none;
+  border-top: 1px solid white;
+  padding-left: 10%;
+  padding-top: 25%;
+  padding-bottom: 25%;
   display: block;
+}
+
+#menu-ultimo-item{
+  border-bottom: 1px solid white;
+}
+#menu-indicador{
+  
+  position: fixed;
+  height: 9%;
+  width:1%;
+  border-radius: 8px;
+  background-color: #D42AFF;
+  top:32.2%;
+  left:1.7%;
+  z-index: 5;
 }
 
 .i{
@@ -40,4 +80,10 @@ section {
 	height: 800px; 
 	margin-top: 50px;
 	margin-bottom: 50px; 
+}
+
+#titulo-nome{
+  position: absolute;
+  bottom:0;
+  left: 3.125%;
 }
