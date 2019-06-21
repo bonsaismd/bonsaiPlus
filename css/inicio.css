@@ -20,7 +20,7 @@
 	font-size:24px;
 }
 
-/*para as arvores ficarem do tamanho certo a altura e largura devem ser setadas*
+/*para as arvores ficarem do tamanho certo a altura e largura devem ser setadas*/
 #inicio-montanha{
 	transform: translate(0%,130%);
 	position: relative;
