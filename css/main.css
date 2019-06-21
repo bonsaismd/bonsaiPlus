@@ -4,7 +4,9 @@ html,body{
 }
 
 body{
-	background-color: #555555;
+  background-image: linear-gradient(#00003F 70%, #4F00AA);
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
 }
 
 section {

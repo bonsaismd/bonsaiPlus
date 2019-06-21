@@ -1,0 +1,258 @@
+section {
+	position: relative;
+	color: white;
+	top: 0;
+	left: 0;
+}
+
+section * {
+	margin: 0;
+}
+
+/*.text-fixed {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	font-size: 1.3rem;
+	color: rgba(255, 255, 255, 0.7);
+}*/
+
+.item-titulo {
+	position: relative;
+	top: 6%;
+	left: 18%;
+	width: 70%;
+	text-align: center;
+}
+
+.item-titulo h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+.item-imagemInicial {
+	position: relative;
+	top: 8%;
+	left: 50%;
+	transform: translate(-46%, 0%);
+	width: 70%;
+}
+
+.item-imagemInicial img {
+	border-radius: 12px;
+	width: 100%;
+}
+
+
+.info {
+	position: relative;
+	top: 18%;
+	left: 18%;
+	width: 70%;
+	height: 70%;
+}
+
+.info-menu {
+	position: absolute;
+	width: 100%;
+	height: 12%;
+}
+
+.item-menu {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+	justify-content: left;
+	list-style-type: none;
+	padding: 0;
+}
+
+.item-menu a {
+	position: absolute;
+	top: 50%;
+	right: -3%;
+	transform: translate(0, -50%);
+	width: 20%;
+	font-size: 1rem;
+	transition: 0.5s;
+	color: white;
+}
+
+@keyframes animSeta {
+  0%   {right: -3%; top:50%;}
+  100% {right: -5%; top:50%;}
+}
+
+.item-menu a:hover {
+	text-decoration: none;
+	color: white;
+	animation: animSeta ease-in 0.4s infinite alternate;
+}
+
+.item-menu .option {
+	position: relative;
+	margin-right: 1%;
+	width: 16%;
+	height: 100%;	
+	cursor: pointer;
+	font-size: 1rem;
+	transition: 0.5s;
+	background-image: linear-gradient(rgba(212, 42, 255,0.7), rgba(212, 42, 255,0.2));
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+
+}
+
+.item-menu .option span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin:  0;
+	white-space: nowrap;
+}
+
+
+.item-menu .option:hover {
+}
+
+.ativo {
+	background-image: linear-gradient(#9420c3, #9420c3) !important;
+}
+
+.info-conteudo {
+	display: none;
+	position: absolute;
+	top: 12%;
+	left: 0%;
+	width: 100%;
+	height: auto;
+	text-align: left;
+	background-image: linear-gradient(rgba(212, 42, 255,0.7), rgba(212, 42, 255,0));
+	border-radius: 8px;
+	border-top-left-radius: 0;
+	padding-bottom: 10%;
+	margin-bottom: 10%;
+}
+
+.conteudo-header {
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	font-size: 1.5rem;
+	font-weight: bold;
+	width: 80%;
+}
+
+.conteudo-body {
+	position: relative;
+	margin: auto;
+	width: 80%;
+}
+
+.carousel {
+	position: relative;
+	margin: auto;
+	margin-top: 10%;
+	width: 80%;
+}
+
+.carousel-indicators li{
+	background-color: #D400EE !important;
+}
+
+.carousel-item img {
+	width: 10%;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D400EE' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D400EE' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+#outros {
+	margin: auto;
+	margin-top: 18%;
+	width: 80%;
+}
+
+.outros-header {
+	text-align: center;
+}
+
+.outros-content {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	padding: 4%;
+	width: 80%;
+	height: 200px;
+	margin: auto;
+	margin-top: 4%;
+}
+
+.outros-content a {
+	width: 100%;
+	height: 100%;
+	margin-left: 4%;
+	border-radius: 12px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.outros-content a:first-child {
+	margin-left: 0;
+}
+
+#ctz {
+	background-image: url("../img/thumbs/ctz.png");
+}
+
+#dis {
+	background-image: url("../img/thumbs/distrince.png");
+}
+
+#prot {
+	background-color: blue;
+}
+
+#safe {
+	background-image: url("../img/thumbs/safelab.png");
+}
+
+.produto-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(212, 42, 255, 0.4), rgba(212, 42, 255, 0.8));
+	border-radius: 12px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.produto-box:hover {
+	opacity: 1;
+}
+
+.produto-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 12px;
+	color: white;
+}
+
+.produto-info h3 {
+	font-size: 1.3rem;
+	margin: 0;
+}
+
+.produto-info p {
+	margin: 0;
+}
