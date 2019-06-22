@@ -24,12 +24,16 @@
 			<div id="titulo-nome">BONSAI +</div>
 		</div>
 
+		<div class="montanha">
+			<img src="img/montanhas.png"  class="img-montanha" alt="ilutração de montanha em tons de roxo com pequenas arvores em cima.">
+		</div>
+
 		<div id="menu-indicador">
-		
+
 		</div>
 
 		<div class="menu">
-<!-- ao clicar em algum botao, ele chama a função que atualiza o local do indicador do menu e vai para a sessao desejada--->
+			<!-- ao clicar em algum botao, ele chama a função que atualiza o local do indicador do menu e vai para a sessao desejada--->
 			<a href="#inicio" class="menu-item" onclick="mover(1)">Início</a>
 			<a href="#produtos" class="menu-item" onclick="mover(2)">Produtos</a>
 			<a href="#sobre" class="menu-item" onclick="mover(3)">Equipe</a>
@@ -40,10 +44,10 @@
 
 		<!-- SESSÃO INICIO -->
 		<section id="inicio" onmouseenter="mover(1)" onkeydown="mover(1)" onkeyup="mover(1)">
-			<div id=cenario>
-				<img id="inicio-montanha" src="img/montanha01.png" alt="ilutração de montanha em tons de roxo" onmouseover="animarArvores('arvores-inicio-montanha')">
-				<img id="arvores-inicio-montanha" src="img/montanha-arvores-inicio.png" alt="ilutração de árvores em tons de roxo">
-			</div>
+<!-- 			<div id=cenario>
+				<img id="inicio-montanha" src="img/montanha01.png" onmouseover="animarArvores('arvores-inicio-montanha')">
+				<img id="arvores-inicio-montanha" src="img/montanha-arvores-inicio.png">
+			</div> -->
 			<div id="inicio-titulo">
 				<div id="inicio-titulo-texto">SOLUÇÕES DIGITAIS<br><span id="inicio-sub-titulo">Plantando ideias, colhendo resultados.</span></div>				
 			</div>
@@ -52,14 +56,19 @@
 
 
 		<!-- SESSÃO PRODUTOS -->
-				<section id="produtos" onmouseenter="mover(2)" onkeydown="mover(2)" onkeyup="mover(2)">
-						<div class="produtos-header">
-				<div class="produtos-titulo">
+		<section id="produtos" onmouseenter="mover(2)" onkeydown="mover(2)" onkeyup="mover(2)">
+
+			<!-- Cabeçalho da Sessão -->
+			<div class="produtos-header">
+				<div class="produtos-titulo"> 
 					<h2>PRODUTOS</h2>
 				</div>
 			</div>
 
+			<!-- Corpo da Sessão -->
 			<div class="produtos-body">
+
+				<!-- Item Clicavel Cage The Zeppelin -->
 				<a href="produtos/cagethezeppelin.html" class="produto" id="ctz">
 					<div class="produto-box">
 						<div class="produto-info">
@@ -68,6 +77,8 @@
 						</div>
 					</div>
 				</a>
+
+				<!-- Item Clicavel Distrince -->
 				<a href="produtos/distrince.html" class="produto" id="dis">
 					<div class="produto-box">
 						<div class="produto-info">
@@ -76,6 +87,8 @@
 						</div>
 					</div>
 				</a>
+
+				<!-- Item Clicavel Proteasy -->
 				<a href="produtos/proteasy.html" class="produto" id="prot">
 					<div class="produto-box">
 						<div class="produto-info">
@@ -84,6 +97,8 @@
 						</div>
 					</div>
 				</a>
+
+				<!-- Item Clicável SafeLab -->
 				<a href="produtos/safelab.html" class="produto" id="safe">
 					<div class="produto-box">
 						<div class="produto-info">
@@ -117,8 +132,8 @@
 					</div>
 				</a>
 				<a href="https://www.behance.net/vinicixsmarc" target="_blank" class="imagens-item" >
-					<img src="img/vinicius.jpg">
-					<div class="mudanca-img" alt="fotografia do rosto de marcos vinicius, homem jovem de 20 anos usando aparelho odontológico, possui cabelos pretos e curtos">
+					<img src="img/vinicius.jpg" alt="fotografia do rosto de marcos vinicius, homem jovem de 20 anos usando aparelho odontológico, possui cabelos pretos e curtos">
+					<div class="mudanca-img">
 						<div class="sobre-nome">Marcos Vinícius<br><span class="sub-nome">DESIGNER</span></div>
 					</div>
 				</a>
@@ -177,20 +192,11 @@
 					<label>Mensagem</label><br>
 					<!--<textarea id="textarea" rols="9" cols="100"></textarea> -->
 					<!-- Botão de envio -->
-					<input class="botao" onclick="funcao1()"  type="submit" value="Enviar">
+					<input class="botao" onclick="funcao1()" type="submit" value="Enviar">
 				</form>
 				<!-- Campo de mensagem -->
 				<div contentEditable="true" id="resposta">
 				</div>
-			</div>
-
-			<!-- Ilustração de montanha -->
-			<div id="montanha_contatos">
-				<img src="img/montanha_contatos.png" alt="ilutração de montanha em tons de roxo">
-			</div>
-			<!-- Ilustração de árvores -->
-			<div id="arvores_contatos">
-				<img src="img/arvores_contatos.png" alt="ilutração de árvores em tons de roxo">
 			</div>
 
 		</section>

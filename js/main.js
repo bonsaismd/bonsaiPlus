@@ -9,9 +9,8 @@ if(sessao==1){
 	indicador.style.top = 53.5+'%';}
 	if(sessao==4){
 	indicador.style.top = 64.3+'%';}
-
-
 }
+
 //tentativa de mudar a posicao das arvores a partir da posicao do mouse
 function animarArvores(id){
 	var arvores=document.getElementById(id);
@@ -25,3 +24,15 @@ function getCursorX(e) {
 	return ((window.Event) ? e.pageX : event.clientX + (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft))
  ; 
 }
+
+
+var current = $(window).scrollTop();
+var total = $(window).height() - current;
+var ele = $(".img-montanha");
+var currPosition = ele.position().left;
+var trackLength = $(window).width()*0.985;
+$(window).scroll(function (event) {
+    current = $(window).scrollTop();
+    var newPosition = trackLength * (current/total)
+    ele.css({left: currPosition-newPosition+'px'});
+});

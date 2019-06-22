@@ -2,12 +2,14 @@ html,body{
   margin:0;
   height:100%;
 }
+
 /*fonte do corpo é roboto, e o gradiente é esse aí do roxo pro roxo mais rosa*/
 body{
 
   font-family: 'Roboto', sans-serif;
   background-image:linear-gradient(#00003F,#00003F,#120058,#4F00AA);
   background-attachment: fixed;
+
 }
 /*criando as sessoes do site*/
 section {
@@ -32,6 +34,25 @@ section {
   */z-index: 2;
 
 }
+
+.montanha {
+  position: fixed;
+  left: 0;
+  bottom:0;
+  width: 98.5vw;
+  height: 40vh;
+  z-index: 99;
+  pointer-events: none;
+}
+
+.img-montanha {
+  position: absolute;
+  bottom: -6%;
+  left: 0;
+  height: 100%;
+  width: 400%
+}
+
 /*especificacoes de local e tamanho do menu, que é uma flex box*/
 .menu {
   position: fixed; 
@@ -41,7 +62,7 @@ section {
   justify-content: space-between;
   width: 8.2%;
   height: 40%; 
-  z-index: 1;
+  z-index: 100;
   top: 0; 
   left: 0; 
   padding-left: 3.125%;

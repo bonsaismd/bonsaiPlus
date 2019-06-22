@@ -1,11 +1,21 @@
+
+/*Cores do texto da sessão*/
 #produtos {
 	color: white;
 }
 
+
+
+
+/*Removendo decorações padrão de links*/
 #produtos a {
 	text-decoration: none;
 }
 
+
+
+
+/*Header da sessão*/
 .produtos-header {
 	position: relative;
 	top: 25%;
@@ -16,6 +26,10 @@
 	background-image: linear-gradient(#D400EE, rgba(212, 42, 255,0.2));
 }
 
+
+
+
+/*Título da sessão*/
 .produtos-titulo {
 	position: relative;
 	top: 50%;
@@ -28,6 +42,10 @@
 	margin: 0;
 }
 
+
+
+
+/*Body da Sessão com flexbox dos recursos*/
 .produtos-body {
 	position: relative;
 	display: flex;
@@ -39,7 +57,6 @@
 	height: 29%;
 	margin: 0;
 }
-
 
 .produto {
 	width: 100%;
@@ -55,6 +72,7 @@
 	margin-left: 0;
 }
 
+/*Definindo imagens dos produtos*/
 #ctz {
 	background-image: url("../img/thumbs/ctz.png");
 }
@@ -64,13 +82,17 @@
 }
 
 #prot {
-	background-color: blue;
+	background-image: url("../img/thumbs/proteasy.png");
 }
 
 #safe {
 	background-image: url("../img/thumbs/safelab.png");
 }
 
+
+
+
+/*Caixa informativa do produto para o mouse hover*/
 .produto-box {
 	position: relative;
 	width: 100%;
