@@ -2,14 +2,12 @@ html,body{
   margin:0;
   height:100%;
 }
-
 /*fonte do corpo é roboto, e o gradiente é esse aí do roxo pro roxo mais rosa*/
 body{
 
   font-family: 'Roboto', sans-serif;
   background-image:linear-gradient(#00003F,#00003F,#120058,#4F00AA);
   background-attachment: fixed;
-
 }
 /*criando as sessoes do site*/
 section {
@@ -19,7 +17,6 @@ section {
   width: auto;
   height: 100vh;
 }
-
 /*titulo fixo*/
 .titulo{
   position:fixed;
@@ -29,7 +26,7 @@ section {
   top:0;
   width:100%;
   height:20%;
-
+ white-space: nowrap;
   /*background-image: linear-gradient(rgba(00,00,63,1),rgba(00,00,63,1),rgba(00,00,63,1),rgba(00,00,63,0));
   */z-index: 2;
 
@@ -66,7 +63,6 @@ section {
   top: 0; 
   left: 0; 
   padding-left: 3.125%;
-  white-space: nowrap;
 }
 
 /*especificacao dos items do menu*/
@@ -87,7 +83,7 @@ section {
 }
 /*esse é o menu indicador rosinha:*/
 #menu-indicador{
-  
+
   position: fixed;
   height: 9%;
   width:1%;
@@ -108,6 +104,12 @@ section {
 
 #titulo-nome{
   position: absolute;
-  bottom:0;
+  width: 8.2%;
+  top:25%;
   left: 3.125%;
+}
+#titulo-nome img{
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 1;
 }

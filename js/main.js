@@ -9,8 +9,9 @@ if(sessao==1){
 	indicador.style.top = 53.5+'%';}
 	if(sessao==4){
 	indicador.style.top = 64.3+'%';}
-}
 
+
+}
 //tentativa de mudar a posicao das arvores a partir da posicao do mouse
 function animarArvores(id){
 	var arvores=document.getElementById(id);
@@ -24,6 +25,22 @@ function getCursorX(e) {
 	return ((window.Event) ? e.pageX : event.clientX + (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft))
  ; 
 }
+$(window).scroll(function (event) {
+var percWindow=($(window).scrollTop())/($(window).height());
+if(percWindow<=0.5){
+	mover(1);
+}else{
+if(percWindow<=1.5){
+	mover(2);
+}else{
+if(percWindow<=2.5){
+	mover(3);
+}else{
+	mover(4);
+}	
+}
+}
+});
 
 
 var current = $(window).scrollTop();
@@ -35,4 +52,4 @@ $(window).scroll(function (event) {
     current = $(window).scrollTop();
     var newPosition = trackLength * (current/total)
     ele.css({left: currPosition-newPosition+'px'});
-});
+}); 

@@ -7,17 +7,17 @@
  /*Campo do título e dos dados*/
 #dados{
 	/*fundo com gradiente linear de um tom de roxo para o transparente*/
-	background-image: linear-gradient(rgba(212,0,238,0.7), rgba(212,0,238,0.2)); 
+	background-image: linear-gradient(rgba(212,0,238,1), rgba(212,0,238,0.2)); 
 	/* largura de 75% e altura de 25% do body*/
 	width: 72%;
-	height: 25%;
+	height: 18.75%;
 	/* bordas arredondadas*/
 	border-radius: 10px;
 	/*posição relativa à posição inicial*/
 	position: relative;
 	/*Deslocamento para a direita e para baixo da posição default*/
 	left: 18.75%;
-	top: 23%;
+	top: 16.15%;
 	/*tipografia roboto ou outra sem serifa*/
 	font-family: 'Roboto', sans-serif;
 }
@@ -28,7 +28,7 @@
 	/*margin de 15px na parte inferior*/
 	margin-bottom: 15px;
 	/*fonte de 1.6 em relação à fonte raiz*/
-	font-size: 1.6rem;
+	font-size: 33px;
 }
 /*Texto de localização*/
 #dados #dados-texto #texto2{
@@ -50,8 +50,11 @@
 #dados-texto{
 	/*centralização dos textos na div maior*/
 	position: absolute;
-	left: 30px;
-	top: 34px;
+	left: 4%;
+	
+	transform: translate(0, -50%);
+	top: 50%;
+
 }
 /*Div do formulário*/
 #formulario{
@@ -60,7 +63,7 @@
 	/*alinhamento da div formulario com a div dos dados*/
 	position: relative;
 	left: 18.75%;
-	top: 26%;
+	top: 20.5%;
 	width: 72%;
 	/*tamanho dos textos de título de 17 px*/
 	font-size: 17px;
